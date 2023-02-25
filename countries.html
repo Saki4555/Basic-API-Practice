@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+
+    <style>
+        #country-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 0 10px 10px 10px;
+        }
+
+        .country {
+            border: 2px solid teal;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            filter: drop-shadow(16px 16px 20px rgb(217, 223, 221)) invert(5%);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+        }
+
+        .country-title {
+            text-align: center;
+            color: cornflowerblue;
+        }
+
+
+        .button-62 {
+            background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+            border: 0;
+            border-radius: 12px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+        }
+
+        .button-62:not([disabled]):focus {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+        .button-62:not([disabled]):hover {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+        #show-details {
+            padding: 5px 20px 20px 20px;
+        }
+
+        @media only screen and (max-width : 1000px) {
+            #country-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+
+        @media only screen and (max-width : 600px) {
+            #country-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="country-title">All Countries</h1>
+
+
+    <main>
+        <section id="show-details">
+
+        </section>
+        <section id="country-container">
+
+        </section>
+    </main>
+
+
+    <script src="js/country.js"></script>
+</body>
+
+</html>
